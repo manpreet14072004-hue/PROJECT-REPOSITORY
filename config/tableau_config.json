@@ -1,0 +1,21 @@
+{
+  "tableau": {
+    "server": "https://tableau.company.com",
+    "username": "your_username",
+    "password": "${TABLEAU_PASSWORD}",
+    "site": "your_site",
+    "version": "2023.1"
+  },
+  "data_sources": {
+    "primary": {
+      "type": "sql_server",
+      "host": "db_server.company.com",
+      "port": 1433,
+      "database": "analytics_db"
+    }
+  },
+  "refresh_schedule": {
+    "frequency": "daily",
+    "time": "02:00 AM"
+  }
+}

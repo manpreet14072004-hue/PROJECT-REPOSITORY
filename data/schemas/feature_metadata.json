@@ -1,0 +1,30 @@
+{
+  "numerical_features": [
+    "trip_distance",
+    "passenger_count",
+    "fare_amount",
+    "pickup_hour",
+    "pickup_day",
+    "pickup_month",
+    "avg_speed_mph",
+    "fare_per_mile",
+    "total_extras",
+    "tip_percentage"
+  ],
+  "binary_features": [
+    "is_weekend",
+    "is_rush_hour",
+    "same_location",
+    "is_popular_pickup",
+    "is_popular_dropoff",
+    "is_high_tipper"
+  ],
+  "categorical_features": [
+    "VendorID",
+    "RatecodeID",
+    "payment_type",
+    "PULocationID",
+    "DOLocationID"
+  ],
+  "target": "trip_duration_minutes"
+}

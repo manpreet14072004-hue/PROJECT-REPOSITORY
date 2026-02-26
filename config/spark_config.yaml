@@ -1,0 +1,21 @@
+# Spark Configuration
+spark:
+  app_name: "ML_Pipeline"
+  master: "local[*]"
+  
+  # Memory configuration
+  driver_memory: "2g"
+  executor_memory: "2g"
+  executor_cores: 4
+  
+  # Shuffle settings
+  shuffle_partitions: 200
+  
+  # SQL settings
+  sql:
+    shuffle_partitions: 200
+    adaptive_execution: true
+  
+  # Performance tuning
+  speculation: false
+  scheduler_mode: "FIFO"
